@@ -3,6 +3,9 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { signup } from '../Redux/Action'
+import '../CSS/pages.css'
+
+
 
 const Signup = () => {
 
@@ -21,7 +24,7 @@ const Signup = () => {
       const handlesubmit=(e)=>{
         e.preventDefault();
         let user ={
-          usename: username,
+          username: username,
           email: email,
           password: password
         }
@@ -31,12 +34,23 @@ const Signup = () => {
 
   return (
     <div>
-      <form onSubmit={handlesubmit}>
-        <input type="text" placeholder='Username' value={username} onChange={(e)=>setUsername(e.target.value)} />
-        <input type="email" placeholder='Email' value={email} onChange={(e)=>setEmail(e.target.value)} />
-        <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)} />
-        <input type="submit"  />
-      </form>
+      <container>
+        <section>
+              <div className='sign-banner-section'>
+                <h1 className='text-center text-white py-5'>SIGNUP</h1>
+              </div>
+            <div className='pt-5'>
+            <form onSubmit={handlesubmit} className='text-center'>
+            <h1 className=''>SIGNUP</h1>
+            <input type="text" placeholder='Username' value={username} onChange={(e)=>setUsername(e.target.value)} /><br/><br/>
+            <input type="email" placeholder='Email' value={email} onChange={(e)=>setEmail(e.target.value)} /><br/><br/>
+            <input type="password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)} /><br/><br/>
+            <input type="submit"  />
+            </form>
+            </div>
+        </section>
+      </container>
+
     </div>
   )
 }

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    text-primary:#f79837;
+}
+.banner-section{
+    background-image: url(../img/banner_3.71b74319.jpg);
+}
+
+.font-150{
+    font-size: 150px;
+}
+
+.padding-60{
+    padding: 60px;
+}
+.margin-top-130px{
+    margin-left: 10px;
+    margin-top:130px;
+}
+
+.navlink:hover{
+    background-color: #feddc8;
+    color: #f79837;
+    transition: all 0.5s;
+}
+
+.sign-banner-section{
+    background-image: url(../img/log-banner.png);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.log-banner-section{
+    background-image: url(../img/log-banner.png);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hp-img img{
+    height:60vh ;
+    width: 100%;
+}
+
+.hp-p p:hover{
+    color: #f79837;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.sec-1-img img{
+    width: 100%;
+    height: 40vh;
+}
+
+.ft span:hover{
+    color: #f79837;
+    transition: all 0.5s;
+    cursor: pointer;
+}
